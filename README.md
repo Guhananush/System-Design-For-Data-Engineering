@@ -9,4 +9,7 @@ In Data Engineering, requirement gathering helps engineers understand the busine
 ### Importance of Requirement Gathering
 Reduces project risks.            
 Prevents misunderstandings.                  
-Saves development time and cost.           
+Saves development time and cost.   
+Improves system quality.              
+Ensures business objectives are achieved.               
+Helps in designing scalable and reliable systems.                  
