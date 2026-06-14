@@ -5,3 +5,8 @@ System Design in Data Engineering is the process of planning, designing, and bui
 Requirement Gathering is the first and most important phase of System Design. It involves collecting, analyzing, and understanding the needs and expectations of stakeholders before designing the system. The goal is to clearly define what the system should do and how it should perform.
 
 In Data Engineering, requirement gathering helps engineers understand the business problem, data sources, data volume, processing requirements, storage needs, and reporting expectations.
+
+### Importance of Requirement Gathering
+Reduces project risks.            
+Prevents misunderstandings.                  
+Saves development time and cost.           
