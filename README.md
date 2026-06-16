@@ -153,6 +153,21 @@ Spark
      ↓               
 Delta Tables                
      ↓                
-Tableau Dashboard                
+Tableau Dashboard         
+
+### Scenario 2: ML Recommendation Team
+Requirements
+Real-time recommendations
+Feature updates within seconds
+#### Architecture       
+User Events         
+   ↓             
+Kafka             
+     ↓                 
+Spark Streaming                
+     ↓             
+Feature Store                  
+     ↓               
+ML Model               
 
 
