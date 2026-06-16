@@ -65,3 +65,14 @@ Possible access methods:
 - REST APIs
 
 The access pattern influences system design decisions.
+
+Example Functional Requirement
+
+The marketing team requires:
+
+- Daily funnel metrics
+- Segmentation by user type
+- Segmentation by device type
+- Access through Tableau
+
+This becomes the functional requirement for the system.
