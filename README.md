@@ -19,7 +19,7 @@ Understand:
 - How fresh the data needs to be
 
 ### Types of Requirements
-1. Functional Requirements
+## 1. Functional Requirements
 
 Functional requirements answer:
 
@@ -76,3 +76,61 @@ The marketing team requires:
 - Access through Tableau
 
 This becomes the functional requirement for the system.
+
+## 2. Non-Functional Requirements
+
+Non-functional requirements answer:
+
+How should the system behave?
+
+### A. Latency (SLA)
+
+How fresh must the data be?
+
+#### Batch Processing
+- Data freshness: 1 hour or more
+- Lower cost
+- Simpler architecture
+#### Streaming Processing
+- Data freshness: Seconds or minutes
+- Higher cost
+- More complex architecture
+
+### B. Data Volume
+
+How much data arrives daily?
+
+Examples:
+
+- 1 GB/day
+- 10 TB/day
+- Petabytes/day
+#### Small Scale
+- Pandas
+- Single Machine Processing
+#### Large Scale
+- Spark
+- Distributed Computing
+
+#### C. Availability
+
+How much downtime is acceptable?
+
+Examples:
+
+- Can tolerate a few minutes of downtime
+- Must be available 24×7
+
+Higher availability requirements increase system complexity.
+
+#### D. Data Retention
+
+How long should data be stored?
+
+Examples:
+
+- 90 Days
+- 1 Year
+- Forever
+
+Older data is often moved to archival storage to reduce costs.
