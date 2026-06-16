@@ -139,4 +139,20 @@ Older data is often moved to archival storage to reduce costs.
 
 The same interview question can lead to completely different solutions.
 
+### Scenario 1: Marketing Team
+Requirements
+- Daily reports
+- Tableau dashboards
+- 1-hour refresh latency
+#### Architecture
+Source Data    
+     ↓          
+Batch Pipeline               
+     ↓                   
+Spark                  
+     ↓               
+Delta Tables                
+     ↓                
+Tableau Dashboard                
+
 
