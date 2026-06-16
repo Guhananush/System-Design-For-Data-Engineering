@@ -1,15 +1,19 @@
 # System-Design-For-Data-Engineering
 System Design in Data Engineering is the process of planning, designing, and building data systems that can efficiently collect, store, process, and deliver data. It focuses on creating scalable, reliable, secure, and cost-effective architectures capable of handling large volumes of data from multiple sources.
 
-## Requirement Gathering in System Design
-Requirement Gathering is the first and most important phase of System Design. It involves collecting, analyzing, and understanding the needs and expectations of stakeholders before designing the system. The goal is to clearly define what the system should do and how it should perform.
+## Step 1: Requirement Gathering in Data Engineering System Design     
+### Overview         
 
-In Data Engineering, requirement gathering helps engineers understand the business problem, data sources, data volume, processing requirements, storage needs, and reporting expectations.
+Requirement Gathering is the most important phase of System Design. Before selecting technologies such as Kafka, Spark, Airflow, or Databricks, we must first understand the problem we are solving.
 
-### Importance of Requirement Gathering
-- Reduces project risks.            
-- Prevents misunderstandings.                  
-- Saves development time and cost.   
-- Improves system quality.              
-- Ensures business objectives are achieved.               
-- Helps in designing scalable and reliable systems.                  
+Many candidates immediately start drawing architectures, but strong system designers spend the first few minutes clarifying requirements.   
+
+### Main Goal   
+
+Understand:
+
+- What the system should do
+- Who will use the system
+- How users will access the data
+- How much data the system will process
+- How fresh the data needs to be
