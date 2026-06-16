@@ -134,3 +134,9 @@ Examples:
 - Forever
 
 Older data is often moved to archival storage to reduce costs.
+
+## Architecture Depends on Requirements
+
+The same interview question can lead to completely different solutions.
+
+
