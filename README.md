@@ -17,3 +17,51 @@ Understand:
 - How users will access the data
 - How much data the system will process
 - How fresh the data needs to be
+
+### Types of Requirements
+1. Functional Requirements
+
+Functional requirements answer:
+
+What should the system do?
+
+Question 1: Who is the End User?
+
+Identify who will consume the data.
+
+Question 2: What Do They Need?        
+
+Understand the type of data required.                   
+
+Examples:              
+
+- Aggregated Metrics
+- Raw Events
+- Historical Snapshots
+### Example: Funnel Analysis
+Homepage
+   ↓
+Search Product
+   ↓
+View Product
+   ↓
+Add To Cart
+   ↓
+Purchase
+
+Business teams often want:
+
+- User counts at each stage
+- Drop-off rates
+- Conversion rates
+
+Question 3: How Will They Access the Data?
+
+Possible access methods:
+
+- SQL Queries
+- Tableau Dashboards
+- Power BI Dashboards
+- REST APIs
+
+The access pattern influences system design decisions.
