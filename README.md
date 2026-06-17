@@ -301,6 +301,46 @@ Serving Layer
           ↓
 Application
 
+#### Core Components
+### 1. Event Ingestion
+
+Captures events from applications and systems.
+
+Popular Tool:
+
+- Apache Kafka
+### 2. Stream Processing
+
+Processes events in real-time.
+
+Popular Tools:
+
+- Spark Structured Streaming
+- Apache Flink
+
+Common Operations:
+
+- Filtering
+- Enrichment
+- Windowing
+- Aggregation
+### 3. Historical Storage
+
+Stores processed events for long-term analytics.
+
+Popular Storage:
+
+- Delta Lake
+### 4. Serving Layer
+
+Provides low-latency access for applications.
+
+Popular Technologies:
+
+- Redis
+- DynamoDB
+- Cassandra
+
            
 
 
