@@ -243,7 +243,32 @@ Stores raw and processed data.
 Examples:
 
 - Amazon S3
-- Azure Data Lake Storage (ADLS) 
+- Azure Data Lake Storage (ADLS)
+
+### Example: E-Commerce Reporting Pipeline
+Schedule
+
+2:00 AM
+
+Airflow triggers pipeline
+
+2:15 AM
+
+Data extracted from operational database
+
+3:00 AM
+
+Spark performs transformations
+
+5:00 AM
+
+Aggregations generated
+
+6:00 AM
+
+Tableau dashboard refreshed
+
+Business users access updated reports every morning.
 
            
 
