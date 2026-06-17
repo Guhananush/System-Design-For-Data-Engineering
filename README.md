@@ -186,4 +186,37 @@ Batch processing collects data over a period of time and processes it together a
 
 Instead of processing every event immediately, the system waits until a predefined schedule and then processes all accumulated data.
 
+When to Use Batch Processing?              
+
+Batch processing is suitable when:         
+
+- Real-time updates are not required        
+- Cost is more important than latency         
+- Users can tolerate delayed data updates       
+- Reports are generated hourly, daily, or weekly
+
+#### Common Use Cases
+- Daily Sales Reports
+- Business Intelligence Dashboards
+- Weekly Analytics Reports
+  
+  Typical Batch Architecture
+Source Database          
+       ↓      
+Extract Data      
+       ↓     
+Data Lake (Bronze)       
+       ↓        
+Spark Transformations       
+       ↓     
+Silver Layer           
+       ↓       
+Aggregations        
+       ↓         
+Gold Layer         
+       ↓            
+Dashboard (Tableau / Power BI)            
+
+           
+
 
