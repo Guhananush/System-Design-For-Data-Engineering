@@ -170,4 +170,20 @@ Feature Store
      ↓               
 ML Model               
 
+## Step 2: Pipeline Design (Batch vs Streaming)
+### Overview
+
+After gathering requirements, the next step in System Design is deciding how data will move through the system.
+
+The first architectural decision is:   
+     Should the pipeline be Batch or Streaming?
+
+This decision influences the entire system design, including storage, processing engines, orchestration tools, and infrastructure costs.
+
+###  Batch Processing     
+#### What is Batch Processing?          
+Batch processing collects data over a period of time and processes it together at scheduled intervals.
+
+Instead of processing every event immediately, the system waits until a predefined schedule and then processes all accumulated data.
+
 
