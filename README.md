@@ -270,6 +270,37 @@ Tableau dashboard refreshed
 
 Business users access updated reports every morning.
 
+### Streaming Processing
+#### What is Streaming Processing?
+
+Streaming processing continuously processes data as events arrive.
+
+Instead of waiting for scheduled execution, data flows through the pipeline in near real-time.
+
+## When to Use Streaming?
+
+Streaming is suitable when: 
+
+- Real-time dashboards are required
+- Fraud detection systems need immediate decisions
+- Recommendation systems require fresh data
+- Data freshness must be measured in seconds
+Common Use Cases
+- Ride-Sharing Applications
+- Fraud Detection
+- Recommendation Systems
+
+#### Typical Streaming Architecture
+Website / Mobile App
+          ↓
+       Kafka
+          ↓
+Spark Streaming / Flink
+          ↓
+Serving Layer
+          ↓
+Application
+
            
 
 
