@@ -215,7 +215,35 @@ Aggregations
        ↓         
 Gold Layer         
        ↓            
-Dashboard (Tableau / Power BI)            
+Dashboard (Tableau / Power BI)
+
+### Core Components
+#### 1. Orchestration Layer
+
+Responsible for scheduling and managing pipeline execution.
+
+Popular Tools:
+
+- Apache Airflow
+- Prefect
+- Dagster
+ 
+#### 2. Processing Engine
+
+Responsible for cleaning, transforming, and aggregating data.
+
+Popular Tool:
+
+- Apache Spark
+
+#### 3. Storage Layer
+
+Stores raw and processed data.
+
+Examples:
+
+- Amazon S3
+- Azure Data Lake Storage (ADLS) 
 
            
 
