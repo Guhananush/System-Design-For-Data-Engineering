@@ -400,6 +400,20 @@ Examples:
 - Product Recommendations
 - Live Monitoring Systems
 
+## Step 3: Data Modeling
+
+### Overview
+
+Data Modeling is the process of organizing data into structures that are efficient for storage, querying, analytics, and reporting.
+
+In Data Engineering System Design interviews, simply drawing fact and dimension tables is not enough. Interviewers often ask deeper questions such as:
+
+- Why did you choose this schema?
+- Why not denormalize the data?
+- What happens when dimensions change?
+- How will the model perform at scale?
+- How do you optimize query performance?
+
            
 
 
