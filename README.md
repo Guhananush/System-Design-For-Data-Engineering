@@ -427,7 +427,24 @@ Silver
    ↓           
 Gold            
 
-Each layer progressively improves data quality and usability.      
+### Each layer progressively improves data quality and usability.
+
+## Bronze Layer (Raw Data)
+Purpose
+
+The Bronze Layer stores raw data exactly as received from source systems.
+
+Examples:
+
+- JSON Events
+- CDC Logs
+- API Responses
+- Database Exports
+#### Characteristics
+- No transformations
+- No business logic
+- Preserves original data
+- Supports reprocessing   
 
            
 
