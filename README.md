@@ -414,6 +414,21 @@ In Data Engineering System Design interviews, simply drawing fact and dimension 
 - How will the model perform at scale?
 - How do you optimize query performance?
 
+### Medallion Architecture
+What is Medallion Architecture?
+
+Medallion Architecture is a layered approach for organizing data within a Lakehouse architecture.
+
+The architecture consists of three layers:           
+
+Bronze              
+   ↓            
+Silver           
+   ↓           
+Gold            
+
+Each layer progressively improves data quality and usability.      
+
            
 
 
