@@ -373,9 +373,33 @@ Producer
     ↓         
 Consumer
 ### Benefits          
-Decouples producers and consumers              
-Stores events temporarily             
-Supports replay of events            
+- Decouples producers and consumers              
+- Stores events temporarily             
+- Supports replay of events        
+
+## Architecture Selection Guide
+### Choose Batch When
+- Daily reporting is sufficient              
+- Cost optimization is important               
+- Business users can wait for updates               
+
+### Examples:
+ 
+- Marketing Analytics              
+- Finance Reports             
+- Historical Dashboards             
+
+### Choose Streaming When
+- Decisions must be made instantly
+- Data freshness is critical
+- User experience depends on real-time updates
+
+Examples:
+
+- Fraud Detection
+- Product Recommendations
+- Live Monitoring Systems
+
            
 
 
