@@ -361,7 +361,21 @@ Redis
         ↓                   
 Driver App                            
 
-The driver sees updated earnings instantly.This is a classic streaming use case.          
+The driver sees updated earnings instantly.This is a classic streaming use case.
+
+### Why Kafka?
+
+Kafka acts as a distributed event buffer between producers and consumers.
+
+Producer          
+    ↓            
+ Kafka            
+    ↓         
+Consumer
+### Benefits          
+Decouples producers and consumers              
+Stores events temporarily             
+Supports replay of events            
            
 
 
