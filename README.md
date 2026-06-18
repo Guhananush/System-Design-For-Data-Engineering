@@ -341,6 +341,27 @@ Popular Technologies:
 - DynamoDB
 - Cassandra
 
+### Example: Real-Time Driver Earnings System            
+
+Consider a ride-sharing platform.           
+
+Whenever a driver completes a ride:                   
+
+Ride Completed               
+        ↓                 
+Event Generated              
+        ↓                
+Kafka                
+        ↓                 
+Spark Streaming            
+        ↓                    
+Calculate Earnings                
+        ↓                
+Redis                    
+        ↓                   
+Driver App                            
+
+The driver sees updated earnings instantly.This is a classic streaming use case.          
            
 
 
