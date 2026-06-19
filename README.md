@@ -514,6 +514,22 @@ Gold tables eliminate expensive joins during dashboard execution.
 
 Problems can be isolated to specific layers.
 
+## Step 4: Storage & File Formats
+### Overview
+
+Storage design plays a critical role in the performance, scalability, and reliability of data systems.
+
+The same query can execute significantly faster or slower depending on how data is stored and which file format is used.
+
+For example, consider a table with:
+
+- 200 Columns
+- 1 Billion Rows
+
+If an analyst frequently queries only 3 columns, choosing the wrong storage format can force the system to scan all 200 columns, resulting in unnecessary computation and higher costs.
+
+Understanding storage formats, open table formats, and database types is essential for designing efficient data platforms.
+
 
 
            
