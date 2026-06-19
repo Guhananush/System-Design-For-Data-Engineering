@@ -530,6 +530,14 @@ If an analyst frequently queries only 3 columns, choosing the wrong storage form
 
 Understanding storage formats, open table formats, and database types is essential for designing efficient data platforms.
 
+### Key Concepts
+
+The most important storage concepts are:          
+
+1. Row-Based vs Column-Based File Formats
+2. Delta Lake, Iceberg, and Hudi
+3. Relational vs Non-Relational Databases
+
 
 
            
