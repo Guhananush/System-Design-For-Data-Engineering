@@ -538,6 +538,61 @@ The most important storage concepts are:
 2. Delta Lake, Iceberg, and Hudi
 3. Relational vs Non-Relational Databases
 
+## Row-Based vs Column-Based Storage
+
+#### Row-Based Storage
+
+In row-based storage, all columns belonging to a single record are stored together.
+
+Row 1:
+[101][John][500][Bengaluru][Electronics]
+
+Row 2:
+[102][Alice][300][Chennai][Fashion]
+
+Each row is written as a complete record.
+
+### Advantages
+- Fast inserts
+- Fast updates
+- Efficient for transactional systems
+- Ideal for write-heavy workloads
+### Common Formats
+- Avro
+- CSV
+- Traditional OLTP Databases
+
+### Column-Based Storage
+
+In column-based storage, values from the same column are stored together.
+
+Order_ID:
+101
+102
+
+Name:
+John
+Alice
+
+Revenue:
+500
+300
+
+City:
+Bengaluru
+Chennai
+
+Data is stored column-by-column rather than row-by-row.
+
+#### Advantages
+- Reads only required columns
+- Reduces I/O operations
+- Better compression
+- Faster analytical queries
+Common Formats
+- Parquet
+- ORC
+
 
 
            
