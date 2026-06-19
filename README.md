@@ -429,7 +429,7 @@ Gold
 
 ### Each layer progressively improves data quality and usability.
 
-## Bronze Layer (Raw Data)
+### Bronze Layer (Raw Data)
 Purpose
 
 The Bronze Layer stores raw data exactly as received from source systems.
@@ -444,7 +444,43 @@ Examples:
 - No transformations
 - No business logic
 - Preserves original data
-- Supports reprocessing   
+- Supports reprocessing
+
+#### Why Bronze Exists
+
+If downstream processing fails or business logic changes, engineers can always reprocess data from the raw source.
+
+This makes the Bronze Layer the foundation of the Lakehouse.
+
+### Silver Layer (Cleaned & Structured Data)
+#### Purpose
+
+The Silver Layer contains validated, cleaned, and structured data.
+
+This layer is considered the organization's trusted source of truth.
+
+#### Typical Transformations
+- Schema Enforcement
+- Type Casting
+- Data Validation
+- Deduplication
+
+### Gold Layer (Business Layer)
+#### Purpose
+
+The Gold Layer contains pre-aggregated and business-ready datasets.
+
+It is optimized for:
+
+- Reporting
+- Dashboards
+- KPIs
+- Analytics
+
+#### Characteristics
+- Pre-joined data
+- Pre-aggregated metrics
+- Fast query performance
 
            
 
