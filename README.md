@@ -482,6 +482,40 @@ It is optimized for:
 - Pre-aggregated metrics
 - Fast query performance
 
+## Gold Layer
+
+Aggregates business metrics.
+
+### Daily_Artist_Streams
+-Date,
+-Artist_ID,
+-Total_Streams
+
+This allows dashboards to query results instantly.
+
+###Benefits of Medallion Architecture
+#### Data Quality
+
+Each layer improves data quality.
+
+#### Reusability
+
+Multiple teams can consume the same Silver data.
+
+#### Scalability
+
+Supports large-scale analytics workloads.
+
+#### Faster Reporting
+
+Gold tables eliminate expensive joins during dashboard execution.
+
+#### Easier Maintenance
+
+Problems can be isolated to specific layers.
+
+
+
            
 
 
