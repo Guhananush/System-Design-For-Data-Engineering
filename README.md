@@ -487,9 +487,9 @@ It is optimized for:
 Aggregates business metrics.
 
 ### Daily_Artist_Streams
--Date,
--Artist_ID,
--Total_Streams
+-Date,         
+-Artist_ID,          
+-Total_Streams              
 
 This allows dashboards to query results instantly.
 
