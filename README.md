@@ -588,8 +588,8 @@ Data is stored column-by-column rather than row-by-row.
 - Reads only required columns
 - Reduces I/O operations
 - Better compression
-- Faster analytical queries
-Common Formats
+- Faster analytical queries         
+#### Common Formats
 - Parquet
 - ORC
 
