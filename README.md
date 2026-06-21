@@ -593,6 +593,13 @@ Data is stored column-by-column rather than row-by-row.
 - Parquet
 - ORC
 
+### Parquet (Column-Based Format)
+What is Parquet?
+
+Parquet is a columnar storage format optimized for analytical workloads.
+
+It stores data column-by-column, allowing query engines to read only the columns needed for a query.
+
 
 
            
