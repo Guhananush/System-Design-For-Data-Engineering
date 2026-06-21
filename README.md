@@ -665,6 +665,43 @@ Examples:
 - Apache Iceberg
 - Apache Hudi
 
+#### Relational vs Non-Relational Databases
+
+System Design interviews often ask:
+
+Which database would you choose and why?
+
+#### Relational Databases
+
+Use relational databases when:
+
+- Data is structured
+- Relationships are important
+- ACID guarantees are required
+- Complex SQL queries are needed
+#### Examples
+- PostgreSQL
+- MySQL
+- SQL Server and Oracle
+
+#### Non-Relational Databases
+
+Use NoSQL databases when:
+
+- Data structure changes frequently
+- Data is semi-structured
+- Data is unstructured
+- High scalability is required
+
+Examples
+- MongoDB
+- Cassandra
+- DynamoDB and Redis
+
+
+  
+   
+
 
 
 
