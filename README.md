@@ -641,6 +641,32 @@ Streaming systems continuously receive events:
 
 Each event must be written immediately.Avro allows fast serialization and efficient writes.
 
+#### Why Delta Lake, Iceberg, and Hudi Matter
+##### Problem with Raw Parquet Files
+
+Early data lakes stored only Parquet files inside cloud storage.
+
+Example:
+
+S3 Bucket         
+   ├── file1.parquet       
+   ├── file2.parquet          
+   ├── file3.parquet           
+
+The issue is that Parquet files alone provide no table management.       
+
+#### Delta Lake / Iceberg / Hudi
+
+Open table formats solve these challenges.
+
+Examples:
+
+- Delta Lake
+- Apache Iceberg
+- Apache Hudi
+
+
+
 
 
            
