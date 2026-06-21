@@ -600,6 +600,29 @@ Parquet is a columnar storage format optimized for analytical workloads.
 
 It stores data column-by-column, allowing query engines to read only the columns needed for a query.
 
+### Column Pruning
+
+This optimization is called:         
+
+#### Column Pruning            
+
+The query engine ignores unnecessary columns, reducing scan time and improving performance.
+
+#### Best Use Cases
+
+Parquet is ideal for:
+
+- Data Warehouses
+- Data Lakes
+- Business Intelligence
+
+#### Why Parquet is Fast
+
+Reads only required columns
+Better compression
+Lower storage costs
+Faster query execution
+
 
 
            
