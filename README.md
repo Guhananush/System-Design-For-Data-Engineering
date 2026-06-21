@@ -618,10 +618,28 @@ Parquet is ideal for:
 
 #### Why Parquet is Fast
 
-Reads only required columns
-Better compression
-Lower storage costs
-Faster query execution
+- Reads only required columns
+- Better compression
+- Lower storage costs
+- Faster query execution
+
+#### Avro (Row-Based Format)
+##### What is Avro?
+
+Avro is a row-based serialization format optimized for streaming and write-heavy workloads.
+
+Each event is written as a complete record.
+
+#### Why Avro is Good for Streaming
+
+Streaming systems continuously receive events:
+
+- Order Created
+- Button Clicked
+- Ride Completed
+- Payment Processed
+
+Each event must be written immediately.Avro allows fast serialization and efficient writes.
 
 
 
