@@ -698,6 +698,23 @@ Examples
 - Cassandra
 - DynamoDB and Redis
 
+## Step 5: Data Quality & Observability
+#### Overview
+
+A data pipeline is only as good as the data flowing through it.
+
+Even if the architecture, storage layer, and processing logic are designed perfectly, poor-quality data can lead to incorrect business decisions, failed machine learning models, and unreliable analytics.
+
+In production systems, data quality issues occur frequently:
+
+- Source systems change unexpectedly
+- Fields become null
+- Data volumes drop suddenly
+- Duplicate records appear
+- Schemas evolve without notice
+
+Without proper monitoring and validation, pipelines may continue running successfully while producing incorrect results.
+
 
   
    
