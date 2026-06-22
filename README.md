@@ -821,6 +821,32 @@ Batch 101 Written Again
 Duplicate Records
 Inflated Metrics
 
+### Data Contracts
+#### What is a Data Contract?
+
+A Data Contract is a formal agreement between:
+
+Data Producer
+        ↔
+Data Consumer
+
+#### The contract defines:
+
+- Schema
+- Data Types
+- Required Fields
+- Allowed Values
+
+### Why Data Contracts Matter
+
+Traditional data quality checks identify problems only after data enters the pipeline.
+
+Data Contracts prevent bad data from entering the system in the first place.
+
+This approach is known as:
+
+##### Shift-Left Data Quality
+
   
    
 
