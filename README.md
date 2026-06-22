@@ -715,6 +715,53 @@ In production systems, data quality issues occur frequently:
 
 Without proper monitoring and validation, pipelines may continue running successfully while producing incorrect results.
 
+### Data Quality Dimensions
+
+#### Data quality is not simply "good" or "bad".
+
+Instead, data should be validated across multiple dimensions.
+
+### 1. Completeness
+Question
+
+Is all expected data present?
+
+Completeness checks ensure that no records or critical fields are missing.
+
+#### Examples
+
+##### Expected:
+
+Daily Orders = 10 Million
+
+##### Received:
+
+Daily Orders = 7.5 Million
+
+Possible Issue:
+
+- Source system failure
+- Missing ingestion jobs
+
+### 2. Accuracy
+Question
+
+Is the data correct?
+
+Accuracy checks validate business logic and detect impossible values.
+
+#### Examples
+
+Invalid Order Amount:
+
+Order Amount = -500
+
+Invalid Delivery Event:
+
+Delivery Time < Order Time
+
+These values are technically possible in source systems but should never pass validation.
+
 
   
    
