@@ -847,6 +847,17 @@ This approach is known as:
 
 ##### Shift-Left Data Quality
 
+### Example Architecture
+Microservice       
+      ↓       
+Data Contract           
+      ↓                      
+Data Pipeline              
+      ↓           
+Bronze Layer          
+
+The contract validates incoming data before it reaches storage.          
+
   
    
 
