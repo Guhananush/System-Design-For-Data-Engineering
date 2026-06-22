@@ -762,6 +762,26 @@ Delivery Time < Order Time
 
 These values are technically possible in source systems but should never pass validation.
 
+### 3. Consistency
+Question
+
+Does the same data agree across systems?
+
+Consistency ensures that related systems report matching values.
+
+#### Example
+
+##### Order System:
+
+March Revenue = $2 Million
+
+Payment System:
+
+March Revenue = $1.8 Million
+
+These numbers should match.
+
+A mismatch indicates data inconsistency.
 
   
    
