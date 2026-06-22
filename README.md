@@ -783,6 +783,44 @@ These numbers should match.
 
 A mismatch indicates data inconsistency.
 
+### 4. Freshness
+Question
+
+Is the data up to date?
+
+Freshness validates whether data arrives within the expected SLA.
+
+#### Example
+
+Expected:
+
+Dashboard Refresh = Daily
+
+Actual:
+
+Last Refresh = 3 Days Ago
+
+Business decisions are now being made using stale data.
+
+### 5. Uniqueness
+Question
+
+Are duplicate records present?
+
+Duplicate records can significantly distort analytics.
+
+#### Example
+
+##### A pipeline retries after failure:
+
+Batch 101 Written
+Batch 101 Written Again
+
+##### Result:
+
+Duplicate Records
+Inflated Metrics
+
   
    
 
