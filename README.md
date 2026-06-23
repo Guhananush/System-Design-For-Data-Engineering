@@ -1040,7 +1040,44 @@ Benefits:
 - Safe pipeline reruns
 - Reliable incremental processing
 
+### Backfills
+#### What is a Backfill?
 
+A backfill is the process of reprocessing historical data after business logic or pipeline code changes.
+
+#### Why Backfills Are Needed
+
+Business requirements evolve over time.
+
+Historical data often needs to be recalculated using updated logic.
+
+### Backfill Strategy
+
+Modern table formats such as Delta Lake and Iceberg make backfills safer.
+
+#### Example:
+
+Affected Dates:
+
+2026-01-01
+      ↓
+2026-04-01
+
+Only those partitions are reprocessed.
+
+### Why This Works
+
+Open table formats support:
+
+#### ACID Transactions
+
+Guarantees:
+
+Success
+OR
+Rollback
+
+Partial updates never become visible.
            
 
 
