@@ -1131,5 +1131,104 @@ user_id : INTEGER
       ↓      
 user_id : STRING   
            
+## Recommended Strategy
+### Flexible Bronze Layer
 
+The Bronze Layer should accept all incoming data.
+
+Source
+   ↓
+Bronze
+
+Characteristics:
+
+- Schema Drift Allowed
+- New Columns Accepted
+- Raw Data Preserved
+
+### Purpose:
+
+Never lose incoming data.
+
+### Strict Silver & Gold Layers           
+Bronze              
+   ↓           
+Silver           
+   ↓           
+Gold          
+
+#### Silver and Gold should enforce:
+
+- Schema Validation
+- Data Types
+- Business Rules
+- Quality Checks
+
+New fields must be:
+
+- Reviewed
+- Validated
+- Explicitly Mapped
+
+before reaching downstream consumers.
+
+### Delta Lake Support
+
+Delta Lake provides:
+
+### Merge Schema
+
+Automatically detects new fields.
+
+mergeSchema = true
+
+Benefits:
+
+- Handles schema evolution gracefully
+- Prevents pipeline failures
+- Maintains backward compatibility
+
+### DataOps Principles
+
+DataOps applies software engineering practices to data platforms.
+
+The goal is to improve reliability, deployment speed, and operational efficiency.
+
+Core Principles
+Automation
+
+Automate:
+
+Deployments
+Testing
+Monitoring
+Data Quality Validation
+Version Control
+
+Store:
+
+Pipeline Code
+SQL Transformations
+Infrastructure Definitions
+
+inside Git repositories.
+
+Continuous Testing
+
+Validate:
+
+Data Quality
+Schemas
+Business Logic
+
+before deployment.
+
+Monitoring
+
+Track:
+
+Pipeline Health
+Data Freshness
+SLA Compliance
+Resource Utilization
 
