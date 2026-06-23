@@ -949,9 +949,96 @@ Monitor:
 - How long did it take?
 - How much data was processed?
 
+## Step 6: Scalability, Backfills & DataOps
 
+### Overview
 
+Designing a pipeline is only the beginning.
 
+In real-world production systems, pipelines must handle failures, schema changes, business logic updates, increasing data volumes, and operational challenges without disrupting downstream consumers.
+
+#### A production-ready Data Engineering system must be:
+
+- Scalable
+- Reliable
+- Idempotent
+- Recoverable
+- Maintainable
+
+This section focuses on the operational aspects of Data Engineering that ensure long-term reliability.
+
+### Key Concepts
+
+The most important concepts are:
+
+- Idempotency
+- Backfills
+- Schema Evolution
+- DataOps Best Practices
+
+### Idempotency: The Golden Rule
+#### What is Idempotency?    
+
+A pipeline is idempotent if running it multiple times with the same input always produces the same output.       
+
+Run Pipeline Once      
+        ↓          
+Output A       
+
+Run Pipeline Five Times             
+        ↓         
+Output A             
+
+The result remains identical regardless of how many times the pipeline executes.              
+
+### Why is Idempotency Important?
+
+Production pipelines frequently fail due to:
+
+- Network Issues
+- Cluster Failures
+- Timeouts
+- Infrastructure Outages
+
+When failures occur, engineers often rerun pipelines.       
+
+Without idempotency:           
+
+Run 1           
+  ↓             
+100 Records         
+
+Run Again         
+  ↓                     
+200 Records (Duplicates)           
+
+This leads to corrupted analytics and incorrect business metrics.
+
+### Achieving Idempotency
+#### Bad Approach
+
+Using INSERT statements.
+
+INSERT INTO orders
+
+Every rerun adds duplicate records.
+
+### Recommended Approach
+
+#### Using MERGE operations.
+
+MERGE INTO orders
+
+Behavior:
+
+- Update if record exists
+- Insert if record does not exist
+
+Benefits:
+
+- No duplicate records
+- Safe pipeline reruns
+- Reliable incremental processing
 
 
            
