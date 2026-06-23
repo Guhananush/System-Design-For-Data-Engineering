@@ -877,9 +877,78 @@ Typical requirements include:
 This prevents downstream failures.
 
 
+### Pipeline Observability
+#### What is Observability?
 
-  
+Data Quality focuses on the data.
+
+Observability focuses on the pipeline itself.
+
+#### Key Question
+
+Is the pipeline healthy?
+
+Even if data is correct, the pipeline may still experience operational issues.
+
+#### Pipeline Monitoring
+
+Observability tracks:
+
+#### Job Status
+Running
+Succeeded
+Failed
+
+#### Execution Time
+
+##### Expected:
+
+40 Minutes
+
+Actual:
+
+3 Hours
+
+##### Possible Causes:
+
+- Increased Data Volume
+- Cluster Resource Issues
+
+#### Pipeline Latency
+
+Tracks how quickly data moves through the system.
+
+#### Resource Utilization
+
+##### Monitors:
+
+- CPU
+- Memory
+- Storage
+- Cluster Health
    
+### Failure Detection
+
+#### Detects:
+
+- Failed Tasks
+- Missing Runs
+- Dependency Issues
+
+#### Example Monitoring Flow
+Source          
+   ↓           
+Pipeline          
+   ↓            
+Storage          
+          
+Monitor:     
+
+- Did the pipeline start?
+- Did it complete successfully?
+- How long did it take?
+- How much data was processed?
+
 
 
 
