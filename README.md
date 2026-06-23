@@ -1073,11 +1073,63 @@ Open table formats support:
 
 Guarantees:
 
-Success
-OR
+Success          
+OR              
 Rollback
 
 Partial updates never become visible.
+
+### Partition Overwrites
+
+Instead of rebuilding the entire table:
+
+Overwrite:
+2026-01
+2026-02
+2026-03
+
+Only affected partitions are replaced.
+
+#### Benefits:
+
+- Faster recovery
+- Lower compute cost
+- Minimal disruption
+
+## Schema Evolution
+### The Reality
+
+Schemas change.
+
+#### Examples:
+
+- New columns are added
+- Existing columns are renamed
+- Data types change
+- APIs evolve
+
+If not handled correctly:
+
+- Pipelines fail
+- Dashboards break
+- Data becomes inconsistent
+
+
+### Common Schema Changes
+#### New Column Added
+discount_code
+
+added to order events.
+
+#### Column Renamed
+user_location       
+      ↓         
+device_location
+
+#### Data Type Change
+user_id : INTEGER          
+      ↓      
+user_id : STRING   
            
 
 
