@@ -856,7 +856,27 @@ Data Pipeline
       ↓           
 Bronze Layer          
 
-The contract validates incoming data before it reaches storage.          
+The contract validates incoming data before it reaches storage. 
+
+#### Schema Evolution
+
+Suppose a producer wants to change:
+
+Schema V1
+    ↓
+Schema V2
+
+A migration process should occur before deployment.
+
+Typical requirements include:
+
+- Versioning
+- Backward Compatibility
+- Advance Notice Period
+
+This prevents downstream failures.
+
+
 
   
    
