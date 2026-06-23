@@ -1194,41 +1194,70 @@ DataOps applies software engineering practices to data platforms.
 
 The goal is to improve reliability, deployment speed, and operational efficiency.
 
-Core Principles
-Automation
+## Core Principles
+### Automation
 
-Automate:
+#### Automate:
 
-Deployments
-Testing
-Monitoring
-Data Quality Validation
-Version Control
+- Deployments
+- Testing
+- Monitoring
+- Data Quality Validation
 
-Store:
+### Version Control
 
-Pipeline Code
-SQL Transformations
-Infrastructure Definitions
+#### Store:
+
+- Pipeline Code
+- SQL Transformations
+- Infrastructure Definitions
 
 inside Git repositories.
 
-Continuous Testing
+### Continuous Testing
 
-Validate:
+#### Validate:
 
-Data Quality
-Schemas
-Business Logic
+- Data Quality
+- Schemas
+- Business Logic
 
 before deployment.
 
-Monitoring
+### Monitoring
 
-Track:
+#### Track:
 
-Pipeline Health
-Data Freshness
-SLA Compliance
-Resource Utilization
+- Pipeline Health
+- Data Freshness
+- SLA Compliance
+- Resource Utilization
+
+### Production Readiness Checklist
+
+A production-grade pipeline should support:
+
+### Idempotency
+
+Safe reruns without duplicates.
+
+### Backfills
+
+Historical data reprocessing.
+
+### Schema Evolution
+
+Graceful handling of changing schemas.
+
+### Data Quality Checks
+
+Validation across all layers.
+
+### Monitoring & Alerting
+
+Fast issue detection.
+
+### Automated Deployments
+
+Consistent releases.
 
